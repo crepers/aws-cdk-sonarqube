@@ -1,0 +1,35 @@
+{
+    "Project": {
+        "Name": "SonarqubeCdk",
+        "Stage": "Dev",
+        "Account": "[Your account number]",
+        "Region": "[Region]",
+        "Profile": "[AWS Credential Profile]"
+    },
+    "Stack": {
+        "VpcInfra": {
+            "Name": "VpcInfraStack",
+            "VPCName": "SonarqubeVPC",
+            "VPCMaxAzs": 2,
+            "VPCCIDR": "10.0.0.0/16",
+            "NATGatewayCount": 1
+        },
+        "Repository": {
+            "Name": "DevRepoStack",
+            "RepoName": "SonarQubeDevSecOps"
+        },
+        "DevSecOps": {
+            "Name": "DevSecOpsStack",
+            "SonarQube": {
+                "SONAR_PROJECT_KEY":"[your project key]",
+                "SONAR_TOKEN_ARN":"arn:aws:secretsmanager:[region]:[account number]:secret:[secret key]"
+            }
+        },
+        "SonarQube": {
+            "Name": "SonarQubeStack",
+            "Cpu": 1024,
+            "MemoryMiB": 2048,
+            "ImageTag": "community"
+        }
+    }
+}

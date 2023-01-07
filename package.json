@@ -1,0 +1,44 @@
+{
+  "name": "aws-sonarqube-using-aws-cdk",
+  "version": "0.1.0",
+  "bin": {
+    "aws-sonarqube-using-aws-cdk": "bin/aws-sonarqube-using-aws-cdk.js"
+  },
+  "scripts": {
+    "cdk-ver": "cdk --version",
+    "cdk-ls": "cdk list",
+    "cdk-deploy": "cdk deploy",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.138.0",
+    "@types/aws-lambda": "^8.10.107",
+    "@types/jest": "^27.0.00",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "10.17.27",
+    "@types/uuid": "^8.3.4",
+    "aws-cdk": "2.31.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.31.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.31.0-alpha.0",
+    "@aws-solutions-constructs/core": "^2.25.0",
+    "aws-cdk-lib": "2.37.1",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1234.0",
+    "axios": "^0.27.2",
+    "constructs": "^10.0.0",
+    "env-var": "6.3.0",
+    "esbuild": "^0.14.47",
+    "lodash": "^4.17.21",
+    "source-map-support": "^0.5.16",
+    "uuid": "^9.0.0"
+  }
+}
