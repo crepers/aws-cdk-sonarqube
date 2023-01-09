@@ -1,4 +1,4 @@
-# Welcome to your CDK TypeScript project
+# Welcome to AWS CodeCommit integrate with SonarQube using CDK
 
 You should explore the contents of this project. 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
@@ -65,7 +65,7 @@ SonarqubeCdkDev-SonarQubeStack.SonarQubesonarqubeserviceServiceURLxxxxx = http:/
 * Click `Security` tab on the top menu.
     > [<img src="doc/admin-security.png" width="450" />](doc/admin-security.png)   
 
-* To Generate token, fill in the `Input Name`, `Type`, `Expires in` and click `Generate` button.
+* To Generate token, fill out the `Input Name`, `Type`, `Expires in` and click `Generate` button.
     > [<img src="doc/create-token.png" width="800" />](doc/create-token.png)  
 
 * Click `Copy` button to store the Key value into your clipboard.
@@ -89,7 +89,7 @@ Secrets Manager enables you to replace hardcoded credentials in your code, inclu
 * Choose `Security type` is `Other type of secret` and clike `Plaintext` tab on `Key/value pairs`. Paste `key` value from what you generate key before in SonarQube.
     > [<img src="doc/secret-value.png" width="800"/>](doc/secret-value.png)  
 * Click `Next` button on the bottom of the page.
-* Fill in the `Secret name`
+* Fill out the `Secret name`
     > [<img src="doc/secret-name.png" width="800" />](doc/secret-name.png)  
 * Click `Next` button on the bottom of the page.
 * Click `Next` button on the bottom of the page. To skip the Configure rotation - optional page.
